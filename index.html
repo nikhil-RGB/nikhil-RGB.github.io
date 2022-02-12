@@ -59,6 +59,7 @@
             background-color: black;
             font-size: 16px;
             font-weight: bold;
+            border-radius: 10px;
         }
         
         .labs {
@@ -97,6 +98,18 @@
             txtB1.style.height = "40%";
             const txtB2 = document.getElementById("24");
             txtB2.style.height = "40%";
+            const encb=document.getElementById("CIPHER");
+            encb.style.height="4%";
+            encb.style.width="13%";
+            encb.style.fontSize="28px";
+            const swi=document.getElementById("enc");
+            swi.style.minHeight="10%";
+            swi.style.fontSize="28px";
+            const lab1=document.getElementsByClassName("labs");
+            for(const labe of lab1)
+            {
+                labe.style.fontSize="28px";
+            }
         }
             class Encrypter {
             static performPadding(s) {
