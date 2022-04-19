@@ -1,0 +1,1 @@
+This repository is used to host the encrypter web app for free on github.io.
