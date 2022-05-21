@@ -1,0 +1,62 @@
+textarea {
+    color: green;
+    background-color: black;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    resize: none;
+}
+
+#enc {
+    color: green;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cont {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fresi.ze-robot.com%2Fdl%2Fmi%2Fminimal-dark-coding-wallpaper-1920%25C3%25971080.jpg&f=1&nofb=1');
+}
+
+body {
+    background-color: black;
+    color: aqua
+}
+
+textarea.font {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.xVWVQfysHH79xkKRzM6SzgHaFj%26pid%3DApi&f=1');
+}
+
+div.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 1024px;
+    align-items: center;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 100%;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.NqaYCLb3p1bhogQBV5LoOgHaEK%26pid%3DApi&f=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#CIPHER {
+    color: green;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.labs {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
