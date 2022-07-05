@@ -209,6 +209,12 @@ section {
     --clr-accent: #6d3b43;
 }
 
+.shoe-novelty-4 {
+    --clr-inner: #5561e7;
+    --clr-outer: #3e35c6;
+    --clr-accent: #9b8387;
+}
+
 .disp {
     max-width: 100%;
     height: auto;
