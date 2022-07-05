@@ -12,7 +12,12 @@ body {
 }
 
 .our-products {
-    background-image: url("https://wallpapercave.com/wp/wp4736597.jpg");
+    /* background-image: url("https://wallpapercave.com/wp/wp4736597.jpg"); */
+    background: url("https://wallpapercave.com/wp/wp4736597.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1,
