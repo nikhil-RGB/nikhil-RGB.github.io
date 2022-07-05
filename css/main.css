@@ -197,6 +197,18 @@ section {
     --clr-accent: #e82b48;
 }
 
+.shoe-novelty-2 {
+    --clr-inner: #036fcf;
+    --clr-outer: #1f71dc;
+    --clr-accent: #e28492;
+}
+
+.shoe-novelty-3 {
+    --clr-inner: #8bec36;
+    --clr-outer: #9ae184;
+    --clr-accent: #6d3b43;
+}
+
 .disp {
     max-width: 100%;
     height: auto;
