@@ -53,23 +53,28 @@
         background-size: cover;
     }
     #main-header {
-        white-space: nowrap;
-        color: cyan;
         box-sizing: border-box;
+        color: cyan;
+        position: top;
         width: 956px;
         height: 103px;
         left: 386px;
         top: 95px;
-        font-family: Courier;
+        font-family: 'Bebas Neue';
         font-style: normal;
-        font-weight: 800;
+        font-weight: 400;
         font-size: 96px;
         line-height: 115px;
         text-align: center;
         letter-spacing: 0.27em;
-        text-shadow: rgba(251, 251, 251, 0.69) 0px 0px 50px;
+        border: 3px solid green;
+        text-shadow: 0px 50px 50px rgba(24, 99, 127, 0.69);
+    }
+    #enc:hover {
+        border: 5px solid green;
     }
     #enc {
+        transition: all 0.2s ease-in-out;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
@@ -111,7 +116,11 @@
         border-radius: 10px;
         font-size: 26px;
     }
+    #CIPHER:hover {
+        border: 5px solid green;
+    }
     #CIPHER {
+        transition: all 0.2s ease-in-out;
         position: absolute;
         width: 284px;
         height: 80px;
