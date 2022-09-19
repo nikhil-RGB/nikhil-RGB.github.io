@@ -1,7 +1,9 @@
 @media only screen and (max-width:1000px) {
     textarea {
+        background: #020617;
+        border: 1px solid #00C0C4;
+        border-radius: 10px;
         color: green;
-        background-color: black;
         font-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
@@ -10,16 +12,12 @@
         resize: none;
     }
     #enc {
+        background: #03C6D2;
+        box-shadow: 0px 0px 50px 0.5px rgba(29, 205, 230, 0.5);
+        border-radius: 10px;
         color: green;
-        background-color: black;
         font-size: 16px;
         font-weight: bold;
-    }
-    .cont {
-        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fresi.ze-robot.com%2Fdl%2Fmi%2Fminimal-dark-coding-wallpaper-1920%25C3%25971080.jpg&f=1&nofb=1');
-    }
-    textarea.font {
-        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.xVWVQfysHH79xkKRzM6SzgHaFj%26pid%3DApi&f=1');
     }
     div.container {
         position: absolute;
@@ -38,8 +36,11 @@
         background-size: cover;
     }
     #CIPHER {
-        color: green;
-        background-color: black;
+        background: #03C6D2;
+        box-shadow: 0px 0px 30px 0.5px #1DCDE6;
+        border-radius: 50px;
+        font-family: 'DM Sans';
+        font-style: normal;
         font-size: 16px;
         font-weight: bold;
         border-radius: 10px;
@@ -53,13 +54,13 @@
         background-size: cover;
     }
     #main-header {
+        color: white;
         box-sizing: border-box;
-        color: cyan;
         position: top;
-        width: 956px;
-        height: 103px;
-        left: 386px;
-        top: 95px;
+        /* width: 956px;
+            height: 103px;
+            left: 500px;
+            top: 95px;*/
         font-family: 'Bebas Neue';
         font-style: normal;
         font-weight: 400;
@@ -67,8 +68,8 @@
         line-height: 115px;
         text-align: center;
         letter-spacing: 0.27em;
-        border: 3px solid green;
-        text-shadow: 0px 50px 50px rgba(24, 99, 127, 0.69);
+        /*border: 3px solid rgba(251, 251, 251, 0.69);*/
+        text-shadow: 0px 0px 50px rgba(251, 251, 251, 0.69);
     }
     #enc:hover {
         border: 5px solid green;
