@@ -39,6 +39,7 @@ button {
     font-family: Copperplate, Lucida Console, Arial;
     font-weight: bold;
     font-size: 30px;
+    color: blue;
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
     display: block;
