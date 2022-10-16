@@ -36,9 +36,9 @@ button {
     border: 5px solid rgb(255, 255, 255);
     background-color: transparent;
     cursor: pointer;
-    font-family: 'Comic-Sans';
+    font-family: Copperplate, Lucida Console, Arial;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
     display: block;
