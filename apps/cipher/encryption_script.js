@@ -23,7 +23,7 @@ if (isMobile) {
 
     document.addEventListener("keydown", (event) => {
         if (SUDO) {
-            let cond = event.ctrlKey && event.key == 'g';
+            let cond = event.ctrlKey && event.key == 'b';
             if (cond) {
 
                 const element = document.getElementById("main-header");
