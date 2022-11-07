@@ -19,6 +19,71 @@ if (isMobile) {
     for (const labe of lab1) {
         labe.style.fontSize = "28px";
     }
+
+    //code to detect swipes
+
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
+
+    var xDown = null;
+    var yDown = null;
+
+    function getTouches(evt) {
+        return evt.touches ||
+            evt.originalEvent.touches;
+    }
+
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    };
+
+    function handleTouchMove(evt) {
+        if (!xDown || !yDown) {
+            return;
+        }
+
+        var xUp = evt.touches[0].clientX;
+        var yUp = evt.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff > 0) {
+                console.log("Left side");
+                /* left swipe */
+                if (SUDO) { return; }
+                let pwd = prompt("Enter password to escalate to SUDO mode:");
+                if (!(pwd == Encrypter.doDecryption(data_c))) {
+                    alert("Invalid Entry, permission to escalate denied.");
+                    return;
+                }
+                SUDO = true;
+                sudoModeColorChange(true);
+                clearOut();
+                alert("Escalation to SUDO mode approved!");
+
+            } else {
+                /* right swipe */
+
+                console.log("Right side");
+                if (!SUDO) { return; }
+                SUDO = false;
+                sudoModeColorChange(false);
+                clearOut();
+                alert("SUDO mode will now deactivate");
+            }
+        }
+        /* reset values */
+        xDown = null;
+        yDown = null;
+    };
+
+
+    //end of swipe gesture code
+
 } else {
 
     document.addEventListener("keydown", (event) => {
@@ -30,6 +95,7 @@ if (isMobile) {
                 element.innerText = "SHUFFLE CIPHER";
                 element.style.color = "white";
                 SUDO = false;
+                sudoModeColorChange(false);
                 clearOut();
                 alert("SUDO mode exiting!");
             }
@@ -46,6 +112,7 @@ if (isMobile) {
                 element.innerText = "SUDO MODE ACTIVE";
                 element.style.color = "cyan";
                 SUDO = true;
+                sudoModeColorChange(true);
                 clearOut();
                 alert("Escalating to SuperUser-Mode!");
 
@@ -238,4 +305,17 @@ function clearOut() {
     button.textContent = op1.value;
     tf.value = "";
     ta.value = "";
+}
+
+function sudoModeColorChange(flag) {
+    //if true, switch to SUDO color scheme(cyan), else default white
+    const elem1 = document.getElementById("23");
+    const elem2 = document.getElementById("24");
+    if (flag) {
+        elem1.style.color = "cyan";
+        elem2.style.color = "cyan";
+    } else {
+        elem1.style.color = "white";
+        elem2.style.color = "white";
+    }
 }

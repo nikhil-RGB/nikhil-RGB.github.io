@@ -3,7 +3,7 @@
         background: #020617;
         border: 1px solid #00C0C4;
         border-radius: 10px;
-        color: green;
+        color: white;
         font-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
@@ -93,7 +93,7 @@
     }
     .cont {
         box-sizing: border-box;
-        color: green;
+        color: white;
         position: absolute;
         width: 744px;
         height: 458px;
@@ -105,7 +105,7 @@
         font-size: 26px;
     }
     .font {
-        color: green;
+        color: white;
         box-sizing: border-box;
         position: absolute;
         width: 744px;
