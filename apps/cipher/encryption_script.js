@@ -3,24 +3,26 @@ var SUDO = false;
 const data_c = "ṽẄẁṿṿṷṾṵẄḗḕ";
 const isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
     (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)));
-/*
+
 if (isMobile) {
-    const txtB1 = document.getElementById("23");
-    txtB1.style.height = "40%";
-    const txtB2 = document.getElementById("24");
-    txtB2.style.height = "40%";
-    const encb = document.getElementById("CIPHER");
-    encb.style.height = "4%";
-    encb.style.width = "13%";
-    encb.style.fontSize = "28px";
-    const swi = document.getElementById("enc");
-    swi.style.minHeight = "10%";
-    swi.style.fontSize = "28px";
-    const lab1 = document.getElementsByClassName("labs");
-    for (const labe of lab1) {
-        labe.style.fontSize = "28px";
-    }
-*/
+
+    /*    
+        const txtB1 = document.getElementById("23");
+        txtB1.style.height = "40%";
+        const txtB2 = document.getElementById("24");
+        txtB2.style.height = "40%";
+        const encb = document.getElementById("CIPHER");
+        encb.style.height = "4%";
+        encb.style.width = "13%";
+        encb.style.fontSize = "28px";
+        const swi = document.getElementById("enc");
+        swi.style.minHeight = "10%";
+        swi.style.fontSize = "28px";
+        const lab1 = document.getElementsByClassName("labs");
+        for (const labe of lab1) {
+            labe.style.fontSize = "28px";
+        }
+    */
 
     //code to detect swipes
 
