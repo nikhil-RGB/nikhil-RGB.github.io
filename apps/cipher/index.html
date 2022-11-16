@@ -5,27 +5,37 @@
 <head>
     <meta charset="utf-8" />
     <title>Shuffle Cipher</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <h1 id="main-header">Shuffle Cipher</h1>
-    <div class="container">
-        <textarea name="TYPE1" type="text" placeholder="Enter text here" id="23" class="cont" rows="15" cols="60"></textarea>
-        <br /><br>
-        <br>
-        <button type="button" value="Encrypt" id="CIPHER">Encrypt</button>
-        <br/><br>
-        <textarea id="24" placeholder="Encrypted/Decrypted text will be shown here" class="font" rows="15" cols="60"></textarea>
-        <div>
+
+    <h1 id="main-header">Shuffle Cipher</h1> 
+
+    <div>
+
+        <div class="selectmode">
             <select id="enc" name="Select Mode">
             <option value="Encrypt" class="opt">Encrypt</option>
             <option value="Decrypt" class="opt">Decrypt</option>
         </select>
         </div>
+        
+    <div class="container">
+        <div> <textarea name="TYPE1" type="text" placeholder="Enter text here" id="23" class="cont" rows="15" cols="60"></textarea>  </div> 
+        <div> <textarea id="24" placeholder="Encrypted/Decrypted text will be shown here" class="font" rows="15" cols="60"></textarea> </div>
     </div>
-    <script src="encryption_script.js">
-    </script>
+
+        <div class="encbutton"> <button type="button" value="Encrypt" id="CIPHER">Encrypt</button>    </div>
+
+    </div>
+
+    <script src="encryption_script.js">  </script>
 
 </body>
 

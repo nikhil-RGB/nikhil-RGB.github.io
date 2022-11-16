@@ -3,6 +3,7 @@ var SUDO = false;
 const data_c = "ṽẄẁṿṿṷṾṵẄḗḕ";
 const isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
     (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)));
+/*
 if (isMobile) {
     const txtB1 = document.getElementById("23");
     txtB1.style.height = "40%";
@@ -19,6 +20,7 @@ if (isMobile) {
     for (const labe of lab1) {
         labe.style.fontSize = "28px";
     }
+*/
 
     //code to detect swipes
 
