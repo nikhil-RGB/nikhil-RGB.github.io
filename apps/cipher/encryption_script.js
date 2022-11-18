@@ -67,6 +67,9 @@ if (isMobile) {
                 SUDO = true;
                 sudoModeColorChange(true);
                 clearOut();
+                const element = document.getElementById("main-header");
+                element.innerText = "SUDO MODE ACTIVE";
+                element.style.color = "cyan";
                 alert("Escalation to SUDO mode approved!");
 
             } else {
@@ -77,6 +80,9 @@ if (isMobile) {
                 SUDO = false;
                 sudoModeColorChange(false);
                 clearOut();
+                const element = document.getElementById("main-header");
+                element.innerText = "SHUFFLE CIPHER";
+                element.style.color = "white";
                 alert("SUDO mode will now deactivate");
             }
         }
